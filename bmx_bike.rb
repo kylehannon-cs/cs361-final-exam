@@ -9,6 +9,11 @@ class BmxBike
     @hourly_price = 5
   end
 
+  def prepare
+    clean
+    adjust_seat
+  end
+
   def clean
     puts "Cleaning..."
   end

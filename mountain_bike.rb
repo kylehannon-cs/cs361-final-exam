@@ -9,6 +9,11 @@ class MountainBike
     @hourly_rate = 10
   end
 
+  def prepare
+    clean
+    adjust_suspension
+  end
+
   def clean
     puts "Cleaning..."
   end
