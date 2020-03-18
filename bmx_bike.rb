@@ -2,8 +2,10 @@ require_relative 'tail_pack'
 
 class BmxBike
 
-  def initialize
-    @tail_pack = TailPack.new
+  attr_accessor :tail_pack :daily_price
+
+  def initialize(packobj)
+    @tail_pack = packobj
     @daily_price = 20
   end
 
@@ -18,14 +20,6 @@ class BmxBike
 
   def adjust_seat
     puts "Adjusting seat..."
-  end
-
-  def tail_pack
-    @tail_pack
-  end
-
-  def rate
-    @daily_price
   end
 
 

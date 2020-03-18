@@ -10,10 +10,10 @@ require_relative 'tail_pack.rb'
 require_relative 'roll_pack.rb'
 require_relative 'pannier.rb'
 
-tailPack.new
+t_pack = TailPack.new
 
 bikes = [
-  BmxBike(tailPack).new,
+  BmxBike(t_pack).new,
   RoadBike.new,
   MountainBike.new,
   MountainBike.new
