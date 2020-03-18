@@ -26,3 +26,5 @@ total_price += bikes[3].weekly_rate
 total_price += bikes[3].luggage.price
 
 puts "Total price: #{total_price}"
+
+
